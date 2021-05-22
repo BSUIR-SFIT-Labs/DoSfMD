@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Windows.Input;
 using Xamarin.Forms;
 using XamarinApp.Views;
 
@@ -8,17 +7,21 @@ namespace XamarinApp.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
-        public Command LoginCommand { get; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+
+        public ICommand LoginCommand { get; }
+
+        public Action DisplayInvalidLoginPrompt { get; set; }
 
         public LoginViewModel()
         {
             LoginCommand = new Command(OnLoginClicked);
         }
 
-        private async void OnLoginClicked(object obj)
+        private void OnLoginClicked(object obj)
         {
-            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+            DisplayInvalidLoginPrompt();
         }
     }
 }
