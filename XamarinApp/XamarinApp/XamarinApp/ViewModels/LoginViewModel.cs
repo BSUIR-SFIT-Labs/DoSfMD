@@ -2,6 +2,7 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 using XamarinApp.Services;
+using XamarinApp.Views;
 
 namespace XamarinApp.ViewModels
 {
@@ -13,12 +14,14 @@ namespace XamarinApp.ViewModels
         public string Password { get; set; }
 
         public ICommand LoginCommand { get; }
+        public ICommand RedirectToRegistrationPage { get; }
 
         public Action DisplayInvalidLoginPrompt { get; set; }
 
         public LoginViewModel()
         {
             LoginCommand = new Command(OnLoginClicked);
+            RedirectToRegistrationPage = new Command(OnRedirectToRegistrationPageClicked);
 
             _firebaseAuthentication = DependencyService.Get<IFirebaseAuthentication>();
         }
@@ -35,6 +38,11 @@ namespace XamarinApp.ViewModels
             {
                 DisplayInvalidLoginPrompt();
             }
+        }
+
+        private void OnRedirectToRegistrationPageClicked(object obj)
+        {
+            Application.Current.MainPage = new RegistrationPage();
         }
     }
 }
