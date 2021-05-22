@@ -11,7 +11,7 @@ namespace XamarinApp.Views
         {
             var loginViewModel = new LoginViewModel();
             BindingContext = loginViewModel;
-            loginViewModel.DisplayInvalidLoginPrompt += () => DisplayAlert("Error", "Invalid Login, try again", "OK");
+            loginViewModel.DisplayInvalidLoginPrompt += () => DisplayAlert("Authentication Failed", "Email or password are incorrect. Try again!", "OK");
 
             InitializeComponent();
         }

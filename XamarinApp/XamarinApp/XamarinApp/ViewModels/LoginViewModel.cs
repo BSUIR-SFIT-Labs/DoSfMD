@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Windows.Input;
 using Xamarin.Forms;
-using XamarinApp.Views;
+using XamarinApp.Services;
 
 namespace XamarinApp.ViewModels
 {
     public class LoginViewModel : BaseViewModel
     {
+        private readonly IFirebaseAuthentication _firebaseAuthentication;
+
         public string Email { get; set; }
         public string Password { get; set; }
 
@@ -17,11 +19,22 @@ namespace XamarinApp.ViewModels
         public LoginViewModel()
         {
             LoginCommand = new Command(OnLoginClicked);
+
+            _firebaseAuthentication = DependencyService.Get<IFirebaseAuthentication>();
         }
 
-        private void OnLoginClicked(object obj)
+        private async void OnLoginClicked(object obj)
         {
-            DisplayInvalidLoginPrompt();
+            bool isAuthSuccessful = await _firebaseAuthentication.LoginWithEmailAndPassword(Email, Password);
+
+            if (isAuthSuccessful)
+            {
+                Application.Current.MainPage = new AppShell();
+            }
+            else
+            {
+                DisplayInvalidLoginPrompt();
+            }
         }
     }
 }

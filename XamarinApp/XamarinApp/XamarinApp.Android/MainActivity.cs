@@ -1,9 +1,8 @@
-﻿using System;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using XamarinApp.Droid.Services;
 
 namespace XamarinApp.Droid
 {
@@ -13,6 +12,8 @@ namespace XamarinApp.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            Xamarin.Forms.DependencyService.Register<FirebaseAuthentication>();
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
