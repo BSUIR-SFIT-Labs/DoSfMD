@@ -16,8 +16,6 @@ namespace XamarinApp.ViewModels
         public ICommand LoginCommand { get; }
         public ICommand RedirectToRegistrationPage { get; }
 
-        public Action DisplayInvalidLoginPrompt { get; set; }
-
         public LoginViewModel()
         {
             LoginCommand = new Command(OnLoginClicked);
@@ -28,7 +26,7 @@ namespace XamarinApp.ViewModels
 
         private async void OnLoginClicked(object obj)
         {
-            bool isAuthSuccessful = await _firebaseAuthentication.LoginWithEmailAndPassword(Email, Password);
+            bool isAuthSuccessful = await _firebaseAuthentication.LoginWithEmailAndPasswordAsync(Email, Password);
 
             if (isAuthSuccessful)
             {
@@ -36,7 +34,8 @@ namespace XamarinApp.ViewModels
             }
             else
             {
-                DisplayInvalidLoginPrompt();
+                await Application.Current.MainPage.DisplayAlert("Authentication Failed", 
+                    "Email or password are incorrect. Try again!", "OK");
             }
         }
 

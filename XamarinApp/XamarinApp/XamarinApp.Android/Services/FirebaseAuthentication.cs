@@ -7,11 +7,34 @@ namespace XamarinApp.Droid.Services
 {
     public class FirebaseAuthentication : IFirebaseAuthentication
     {
-        public async Task<bool> LoginWithEmailAndPassword(string email, string password)
+        public async Task<bool> RegisterWithEmailAndPasswordAsync(string email, string password)
         {
             try
             {
-                var user = await Firebase.Auth.FirebaseAuth.Instance.SignInWithEmailAndPasswordAsync(email, password);
+                var registrationResult = await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
+                return true;
+            }
+            catch (FirebaseAuthInvalidUserException e)
+            {
+                e.PrintStackTrace();
+                return false;
+            }
+            catch (FirebaseAuthInvalidCredentialsException e)
+            {
+                e.PrintStackTrace();
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> LoginWithEmailAndPasswordAsync(string email, string password)
+        {
+            try
+            {
+                var user = await FirebaseAuth.Instance.SignInWithEmailAndPasswordAsync(email, password);
                 return IsSignIn();
             }
             catch (FirebaseAuthInvalidUserException e)
@@ -22,6 +45,10 @@ namespace XamarinApp.Droid.Services
             catch (FirebaseAuthInvalidCredentialsException e)
             {
                 e.PrintStackTrace();
+                return false;
+            }
+            catch
+            {
                 return false;
             }
         }
