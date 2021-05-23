@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:viewModels="clr-namespace:XamarinApp.ViewModels;assembly=XamarinApp" x:DataType="viewModels:RegistrationViewModel"
+             xmlns:viewModels="clr-namespace:XamarinApp.ViewModels;assembly=XamarinApp"
+             xmlns:resources="clr-namespace:XamarinApp.Resources;assembly=XamarinApp"
+             x:DataType="viewModels:RegistrationViewModel"
              mc:Ignorable="d"
              x:Class="XamarinApp.Views.RegistrationPage"
              Shell.NavBarIsVisible="False"
@@ -11,13 +13,15 @@
     <ContentPage.Content>
         <StackLayout Padding="20,0,20,0"
                      VerticalOptions="Center">
-            <Label Margin="0, 0, 0, 20"
+            <Label Text="{x:Static resources:AppContentText.RegistrationTitle}" 
+                   Margin="0, 0, 0, 20"
                    TextColor="#2d4158"
                    FontSize="Large"
-                   HorizontalTextAlignment="Center">SIGN UP</Label>
+                   TextTransform="Uppercase"
+                   HorizontalTextAlignment="Center" />
             <Entry x:Name="Email" 
                    Text="{Binding Email}"
-                   Placeholder="Email"  
+                   Placeholder="{x:Static resources:AppContentText.EmailPlaceholder}"  
                    PlaceholderColor="#2d4158" HeightRequest="40"  
                    Keyboard = "Email"  
                    TextColor = "#2d4158"
@@ -25,7 +29,7 @@
                    FontSize="Medium" />
             <Entry x:Name="Password" 
                    Text="{Binding Password}"
-                   Placeholder="Password"  
+                   Placeholder="{x:Static resources:AppContentText.PasswordPlaceholder}"  
                    PlaceholderColor="#2d4158" HeightRequest="40"  
                    IsPassword="True"  
                    TextColor="#2d4158"
@@ -33,19 +37,19 @@
                    FontSize="Medium" />
             <Entry x:Name="RePassword" 
                    Text="{Binding RePassword}"
-                   Placeholder="Password"  
+                   Placeholder="{x:Static resources:AppContentText.PasswordPlaceholder}"  
                    PlaceholderColor="#2d4158" HeightRequest="40"  
                    IsPassword="True"  
                    TextColor="#2d4158"
                    BackgroundColor="Transparent" 
                    FontSize="Medium" />
-            <Button Text="Register"
+            <Button Text="{x:Static resources:AppContentText.RegisterButton}"
                     Command="{Binding Register}"
                     TextColor="#f0ebf4"  
                     HorizontalOptions="FillAndExpand"  
                     BackgroundColor="#e64398" 
                     Margin="0, 10, 0 ,0"/>
-            <Button Text="Sign in to your account"
+            <Button Text="{x:Static resources:AppContentText.RedirectToLoginPageButton}"
                     Command="{Binding RedirectToLoginPage}"
                     BackgroundColor="Transparent"
                     TextColor="#2d4158"/>

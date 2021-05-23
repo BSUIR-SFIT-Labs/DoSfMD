@@ -1,6 +1,6 @@
-﻿using System;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Xamarin.Forms;
+using XamarinApp.Resources;
 using XamarinApp.Services;
 using XamarinApp.Views;
 
@@ -34,8 +34,8 @@ namespace XamarinApp.ViewModels
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Authentication Failed", 
-                    "Email or password are incorrect. Try again!", "OK");
+                await Application.Current.MainPage.DisplayAlert(AppContentText.LoginFailedTitle, 
+                    AppContentText.LoginFailedMessage, AppContentText.AlertButtonOk);
             }
         }
 

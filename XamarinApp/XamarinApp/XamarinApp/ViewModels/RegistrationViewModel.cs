@@ -1,5 +1,6 @@
 ﻿using System.Windows.Input;
 using Xamarin.Forms;
+using XamarinApp.Resources;
 using XamarinApp.Services;
 using XamarinApp.Views;
 
@@ -36,13 +37,14 @@ namespace XamarinApp.ViewModels
                 }
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Registration Failed",
-                        "Email or passwords are incorrect. Try again!", "OK");
+                    await Application.Current.MainPage.DisplayAlert(AppContentText.RegistrationFailedTitle,
+                        AppContentText.RegistrationFailedMessage, AppContentText.AlertButtonOk);
                 }
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Registration Failed", "Passwords must match.", "OK");
+                await Application.Current.MainPage.DisplayAlert(AppContentText.RegistrationFailedTitle,
+                    AppContentText.RegistrationErrorPasswordsMessage, AppContentText.AlertButtonOk);
             }
         }
 
