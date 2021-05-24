@@ -2,6 +2,7 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:XamarinApp.Views"
+       xmlns:localLang="clr-namespace:XamarinApp.Services;assembly=XamarinApp"
        Title="XamarinApp"
        x:Class="XamarinApp.AppShell">
 
@@ -30,9 +31,9 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="Home" Icon="icon_home.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Map" Icon="icon_map.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
-        <ShellContent Title="Settings" Icon="icon_settings.png" ContentTemplate="{DataTemplate local:SettingsPage}" />
+        <ShellContent Title="{localLang:LanguageService HomeTab}" Icon="icon_home.png" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="{localLang:LanguageService MapTab}" Icon="icon_map.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="{localLang:LanguageService SettingsTab}" Icon="icon_settings.png" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </TabBar>
 
 </Shell>

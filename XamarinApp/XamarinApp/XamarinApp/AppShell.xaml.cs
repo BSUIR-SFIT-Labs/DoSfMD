@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Xamarin.Forms;
-using XamarinApp.ViewModels;
+﻿using Xamarin.Forms;
 using XamarinApp.Views;
 
 namespace XamarinApp
@@ -14,7 +11,22 @@ namespace XamarinApp
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
-        }
 
+            MessagingCenter.Subscribe<SettingsPage>(this, "LanguageChanged",
+                (sender) =>
+                {
+                    Application.Current.MainPage = new AppShell();
+                });
+            MessagingCenter.Subscribe<SettingsPage>(this, "FontFamilyChanged",
+                (sender) =>
+                {
+                    Application.Current.MainPage = new AppShell();
+                });
+            MessagingCenter.Subscribe<SettingsPage>(this, "FontSizeChanged",
+                (sender) =>
+                {
+                    Application.Current.MainPage = new AppShell();
+                });
+        }
     }
 }

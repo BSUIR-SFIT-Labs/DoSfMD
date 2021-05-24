@@ -29,9 +29,14 @@ namespace XamarinApp.Services
                 return "";
             }
 
-            var resourceManager = new ResourceManager(LanguageResource, typeof(AppContentText).GetTypeInfo().Assembly);
+            var resourceManager = new ResourceManager(LanguageResource, typeof(LanguageService).GetTypeInfo().Assembly);
 
-            string translation = resourceManager.GetString(Text, _cultureInfo) ?? Text;
+            string translation = resourceManager.GetString(Text, _cultureInfo);
+
+            if (translation == null)
+            {
+                translation = Text;
+            }
 
             return translation;
         }

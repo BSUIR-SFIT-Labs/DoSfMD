@@ -3,17 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinApp.Views.SettingsPage"
              xmlns:vm="clr-namespace:XamarinApp.ViewModels"
-             Title="{Binding Title}">
+             xmlns:local="clr-namespace:XamarinApp.Services;assembly=XamarinApp"
+             Title="{local:LanguageService Settings}">
 
     <ContentPage.BindingContext>
         <vm:SettingsViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20,0,20,0">
+            <Label Text="{local:LanguageService SelectLanguagePlaceholder}"
+                   FontSize="{local:FontSizeService}"
+                   FontFamily="{local:FontFamilyService}"
+                   Margin="0, 5, 0, 0" />
+            <Picker x:Name="LanguagePicker"
+                    Title="{Binding CurrentLanguage}"
+                    HorizontalOptions="FillAndExpand" 
+                    SelectedIndexChanged="OnLanguageChanged" 
+                    FontSize="{local:FontSizeService}"
+                    FontFamily="{local:FontFamilyService}"/>
+            <Label Text="{local:LanguageService SelectFontFamilyPlaceholder}"
+                   FontSize="{local:FontSizeService}"
+                   FontFamily="{local:FontFamilyService}"
+                   Margin="0, 5, 0, 0" />
+            <Picker x:Name="FontFamilyPicker"
+                    Title="{Binding CurrentFontFamily}"
+                    HorizontalOptions="FillAndExpand" 
+                    SelectedIndexChanged="OnFontFamilyChanged" 
+                    FontSize="{local:FontSizeService}"
+                    FontFamily="{local:FontFamilyService}"/>
+            <Label Text="{local:LanguageService SelectFontSizePlaceholder}"
+                   FontSize="{local:FontSizeService}"
+                   FontFamily="{local:FontFamilyService}"
+                   Margin="0, 5, 0, 0" />
+            <Picker x:Name="FontSizePicker"
+                    Title="{Binding CurrentFontSize}"
+                    HorizontalOptions="FillAndExpand" 
+                    SelectedIndexChanged="OnFontSizeChanged" 
+                    FontSize="{local:FontSizeService}"
+                    FontFamily="{local:FontFamilyService}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

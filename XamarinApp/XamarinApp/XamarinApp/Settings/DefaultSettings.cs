@@ -2,14 +2,8 @@
 {
     public class DefaultSettings
     {
-        public static string FontFamily { get; set; }
-        public static string Language { get; set; }
-        public static double FontSize { get; set; }
-
-        public DefaultSettings()
-        {
-            FontFamily = "serif";
-            FontSize = 18;
-        }
+        public static string Language { get; set; } = "en-US";
+        public static string FontFamily { get; set; } = "serif";
+        public static double FontSize { get; set; } = 18;
     }
 }

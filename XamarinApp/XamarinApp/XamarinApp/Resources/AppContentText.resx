@@ -117,46 +117,70 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AlertButtonOk" xml:space="preserve">
-    <value>Ok</value>
-  </data>
-  <data name="EmailPlaceholder" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="LoginButton" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="LoginFailedMessage" xml:space="preserve">
-    <value>Email or password are incorrect. Try again!</value>
-  </data>
-  <data name="LoginFailedTitle" xml:space="preserve">
+  <data name="Authentication Failed" xml:space="preserve">
     <value>Authentication Failed</value>
   </data>
-  <data name="LoginTitle" xml:space="preserve">
-    <value>Sign in</value>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
   </data>
-  <data name="PasswordPlaceholder" xml:space="preserve">
-    <value>Password</value>
+  <data name="Email or password are incorrect. Try again!" xml:space="preserve">
+    <value>Email or password are incorrect. Try again!</value>
   </data>
-  <data name="RedirectToLoginPageButton" xml:space="preserve">
-    <value>Sign in to your account</value>
-  </data>
-  <data name="RedirectToRegistrationPageButton" xml:space="preserve">
-    <value>Register now</value>
-  </data>
-  <data name="RegisterButton" xml:space="preserve">
-    <value>Register</value>
-  </data>
-  <data name="RegistrationErrorPasswordsMessage" xml:space="preserve">
-    <value>Passwords must match.</value>
-  </data>
-  <data name="RegistrationFailedMessage" xml:space="preserve">
+  <data name="Email or passwords are incorrect. Try again!" xml:space="preserve">
     <value>Email or passwords are incorrect. Try again!</value>
   </data>
-  <data name="RegistrationFailedTitle" xml:space="preserve">
+  <data name="HomeTab" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MainSettingsTitle" xml:space="preserve">
+    <value>Main settings</value>
+  </data>
+  <data name="MapTab" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Passwords must match." xml:space="preserve">
+    <value>Passwords must match.</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Register now" xml:space="preserve">
+    <value>Register now</value>
+  </data>
+  <data name="Registration Failed" xml:space="preserve">
     <value>Registration Failed</value>
   </data>
-  <data name="RegistrationTitle" xml:space="preserve">
+  <data name="SelectFontFamilyPlaceholder" xml:space="preserve">
+    <value>Select FontFamily</value>
+  </data>
+  <data name="SelectFontSizePlaceholder" xml:space="preserve">
+    <value>Select FontSize</value>
+  </data>
+  <data name="SelectLanguagePlaceholder" xml:space="preserve">
+    <value>Select language</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Sign in" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="Sign in to your account" xml:space="preserve">
+    <value>Sign in to your account</value>
+  </data>
+  <data name="Sign up" xml:space="preserve">
     <value>Sign up</value>
   </data>
 </root>
