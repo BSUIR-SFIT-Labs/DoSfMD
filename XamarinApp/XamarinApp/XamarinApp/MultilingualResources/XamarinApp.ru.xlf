@@ -102,6 +102,10 @@
           <source>Sign up</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Регистрация</target>
         </trans-unit>
+        <trans-unit id="String1" translate="yes" xml:space="preserve">
+          <source>Add computer</source>
+          <target state="new">Add computer</target>
+        </trans-unit>
       </group>
     </body>
   </file>

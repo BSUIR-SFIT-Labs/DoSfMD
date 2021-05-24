@@ -61,6 +61,15 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add computer.
+        /// </summary>
+        internal static string AddComputerPageTitle {
+            get {
+                return ResourceManager.GetString("AddComputerPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email or password are incorrect. Try again!.
         /// </summary>
         internal static string AuthError {

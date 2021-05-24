@@ -12,7 +12,7 @@
     </ContentPage.BindingContext>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" />
+        <ToolbarItem Text="Add" Command="{Binding RedirectToAddComputerPage}" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
