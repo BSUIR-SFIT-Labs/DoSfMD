@@ -34,8 +34,8 @@ namespace XamarinApp.ViewModels
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert(AppContentText.Authentication_Failed, 
-                    AppContentText.Email_or_password_are_incorrect__Try_again_, AppContentText.Ok);
+                await Application.Current.MainPage.DisplayAlert(AppContentText.LogOutErrorTitle, 
+                    AppContentText.LogOutError, AppContentText.OkButton);
             }
         }
 

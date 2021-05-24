@@ -61,38 +61,29 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Email or password are incorrect. Try again!.
+        /// </summary>
+        internal static string AuthError {
+            get {
+                return ResourceManager.GetString("AuthError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Authentication Failed.
         /// </summary>
-        internal static string Authentication_Failed {
+        internal static string AuthErrorTitle {
             get {
-                return ResourceManager.GetString("Authentication Failed", resourceCulture);
+                return ResourceManager.GetString("AuthErrorTitle", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
-        internal static string Email {
+        internal static string EmailPlaceholder {
             get {
-                return ResourceManager.GetString("Email", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Email or password are incorrect. Try again!.
-        /// </summary>
-        internal static string Email_or_password_are_incorrect__Try_again_ {
-            get {
-                return ResourceManager.GetString("Email or password are incorrect. Try again!", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Email or passwords are incorrect. Try again!.
-        /// </summary>
-        internal static string Email_or_passwords_are_incorrect__Try_again_ {
-            get {
-                return ResourceManager.GetString("Email or passwords are incorrect. Try again!", resourceCulture);
+                return ResourceManager.GetString("EmailPlaceholder", resourceCulture);
             }
         }
         
@@ -108,9 +99,36 @@ namespace XamarinApp.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Login.
         /// </summary>
-        internal static string Login {
+        internal static string LoginButton {
             get {
-                return ResourceManager.GetString("Login", resourceCulture);
+                return ResourceManager.GetString("LoginButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Log out.
+        /// </summary>
+        internal static string LogOutButton {
+            get {
+                return ResourceManager.GetString("LogOutButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred while logging out of account. Try Again!.
+        /// </summary>
+        internal static string LogOutError {
+            get {
+                return ResourceManager.GetString("LogOutError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Logout Failed.
+        /// </summary>
+        internal static string LogOutErrorTitle {
+            get {
+                return ResourceManager.GetString("LogOutErrorTitle", resourceCulture);
             }
         }
         
@@ -135,59 +153,77 @@ namespace XamarinApp.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Ok.
         /// </summary>
-        internal static string Ok {
+        internal static string OkButton {
             get {
-                return ResourceManager.GetString("Ok", resourceCulture);
+                return ResourceManager.GetString("OkButton", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
-        internal static string Password {
+        internal static string PasswordPlaceholder {
             get {
-                return ResourceManager.GetString("Password", resourceCulture);
+                return ResourceManager.GetString("PasswordPlaceholder", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Passwords must match..
         /// </summary>
-        internal static string Passwords_must_match_ {
+        internal static string PasswordsError {
             get {
-                return ResourceManager.GetString("Passwords must match.", resourceCulture);
+                return ResourceManager.GetString("PasswordsError", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Register.
+        ///   Looks up a localized string similar to Sign in to your account.
         /// </summary>
-        internal static string Register {
+        internal static string RedirectToLoginPage {
             get {
-                return ResourceManager.GetString("Register", resourceCulture);
+                return ResourceManager.GetString("RedirectToLoginPage", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Register now.
         /// </summary>
-        internal static string Register_now {
+        internal static string RedirectToRegistrationPage {
             get {
-                return ResourceManager.GetString("Register now", resourceCulture);
+                return ResourceManager.GetString("RedirectToRegistrationPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        internal static string RegisterButton {
+            get {
+                return ResourceManager.GetString("RegisterButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email or passwords are incorrect. Try again!.
+        /// </summary>
+        internal static string RegistrationError {
+            get {
+                return ResourceManager.GetString("RegistrationError", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Registration Failed.
         /// </summary>
-        internal static string Registration_Failed {
+        internal static string RegistrationErrorTitle {
             get {
-                return ResourceManager.GetString("Registration Failed", resourceCulture);
+                return ResourceManager.GetString("RegistrationErrorTitle", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select FontFamily.
+        ///   Looks up a localized string similar to Select Font.
         /// </summary>
         internal static string SelectFontFamilyPlaceholder {
             get {
@@ -196,7 +232,7 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select FontSize.
+        ///   Looks up a localized string similar to Select Font size.
         /// </summary>
         internal static string SelectFontSizePlaceholder {
             get {
@@ -216,15 +252,6 @@ namespace XamarinApp.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
-        internal static string Settings {
-            get {
-                return ResourceManager.GetString("Settings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Settings.
-        /// </summary>
         internal static string SettingsTab {
             get {
                 return ResourceManager.GetString("SettingsTab", resourceCulture);
@@ -234,27 +261,18 @@ namespace XamarinApp.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Sign in.
         /// </summary>
-        internal static string Sign_in {
+        internal static string SignInTitle {
             get {
-                return ResourceManager.GetString("Sign in", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sign in to your account.
-        /// </summary>
-        internal static string Sign_in_to_your_account {
-            get {
-                return ResourceManager.GetString("Sign in to your account", resourceCulture);
+                return ResourceManager.GetString("SignInTitle", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Sign up.
         /// </summary>
-        internal static string Sign_up {
+        internal static string SignUpTitle {
             get {
-                return ResourceManager.GetString("Sign up", resourceCulture);
+                return ResourceManager.GetString("SignUpTitle", resourceCulture);
             }
         }
     }

@@ -6,29 +6,37 @@
     </header>
     <body>
       <group id="XAMARINAPP/RESOURCES/APPCONTENTTEXT.RESX" datatype="resx">
-        <trans-unit id="Authentication Failed" translate="yes" xml:space="preserve">
-          <source>Authentication Failed</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Проверка подлинности не пройдена</target>
-        </trans-unit>
-        <trans-unit id="Email" translate="yes" xml:space="preserve">
-          <source>Email</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Электронная почта</target>
-        </trans-unit>
-        <trans-unit id="Email or password are incorrect. Try again!" translate="yes" xml:space="preserve">
+        <trans-unit id="AuthError" translate="yes" xml:space="preserve">
           <source>Email or password are incorrect. Try again!</source>
           <target state="new">Email or password are incorrect. Try again!</target>
         </trans-unit>
-        <trans-unit id="Email or passwords are incorrect. Try again!" translate="yes" xml:space="preserve">
-          <source>Email or passwords are incorrect. Try again!</source>
-          <target state="new">Email or passwords are incorrect. Try again!</target>
+        <trans-unit id="AuthErrorTitle" translate="yes" xml:space="preserve">
+          <source>Authentication Failed</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Проверка подлинности не пройдена</target>
+        </trans-unit>
+        <trans-unit id="EmailPlaceholder" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Электронная почта</target>
         </trans-unit>
         <trans-unit id="HomeTab" translate="yes" xml:space="preserve">
           <source>Home</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">домашний</target>
         </trans-unit>
-        <trans-unit id="Login" translate="yes" xml:space="preserve">
+        <trans-unit id="LoginButton" translate="yes" xml:space="preserve">
           <source>Login</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Вход</target>
+        </trans-unit>
+        <trans-unit id="LogOutButton" translate="yes" xml:space="preserve">
+          <source>Log out</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Выйти</target>
+        </trans-unit>
+        <trans-unit id="LogOutError" translate="yes" xml:space="preserve">
+          <source>An error occurred while logging out of account. Try Again!</source>
+          <target state="new">An error occurred while logging out of account. Try Again!</target>
+        </trans-unit>
+        <trans-unit id="LogOutErrorTitle" translate="yes" xml:space="preserve">
+          <source>Logout Failed</source>
+          <target state="new">Logout Failed</target>
         </trans-unit>
         <trans-unit id="MainSettingsTitle" translate="yes" xml:space="preserve">
           <source>Main settings</source>
@@ -38,59 +46,59 @@
           <source>Map</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Карта</target>
         </trans-unit>
-        <trans-unit id="Ok" translate="yes" xml:space="preserve">
+        <trans-unit id="OkButton" translate="yes" xml:space="preserve">
           <source>Ok</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">ОК</target>
         </trans-unit>
-        <trans-unit id="Password" translate="yes" xml:space="preserve">
+        <trans-unit id="PasswordPlaceholder" translate="yes" xml:space="preserve">
           <source>Password</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Введите пароль</target>
         </trans-unit>
-        <trans-unit id="Passwords must match." translate="yes" xml:space="preserve">
+        <trans-unit id="PasswordsError" translate="yes" xml:space="preserve">
           <source>Passwords must match.</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Пароли должны совпадать.</target>
         </trans-unit>
-        <trans-unit id="Register" translate="yes" xml:space="preserve">
-          <source>Register</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Зарегистрировать</target>
+        <trans-unit id="RedirectToLoginPage" translate="yes" xml:space="preserve">
+          <source>Sign in to your account</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Войдите в учетную запись</target>
         </trans-unit>
-        <trans-unit id="Register now" translate="yes" xml:space="preserve">
+        <trans-unit id="RedirectToRegistrationPage" translate="yes" xml:space="preserve">
           <source>Register now</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Зарегистрировать сейчас</target>
         </trans-unit>
-        <trans-unit id="Registration Failed" translate="yes" xml:space="preserve">
+        <trans-unit id="RegisterButton" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Зарегистрировать</target>
+        </trans-unit>
+        <trans-unit id="RegistrationError" translate="yes" xml:space="preserve">
+          <source>Email or passwords are incorrect. Try again!</source>
+          <target state="new">Email or passwords are incorrect. Try again!</target>
+        </trans-unit>
+        <trans-unit id="RegistrationErrorTitle" translate="yes" xml:space="preserve">
           <source>Registration Failed</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Регистрация не выполнена</target>
         </trans-unit>
         <trans-unit id="SelectFontFamilyPlaceholder" translate="yes" xml:space="preserve">
-          <source>Select FontFamily</source>
-          <target state="new">Select FontFamily</target>
+          <source>Select Font</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Выберите шрифт</target>
         </trans-unit>
         <trans-unit id="SelectFontSizePlaceholder" translate="yes" xml:space="preserve">
-          <source>Select FontSize</source>
-          <target state="new">Select FontSize</target>
+          <source>Select Font size</source>
+          <target state="new">Select Font size</target>
         </trans-unit>
         <trans-unit id="SelectLanguagePlaceholder" translate="yes" xml:space="preserve">
           <source>Select language</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Выберите язык</target>
         </trans-unit>
-        <trans-unit id="Settings" translate="yes" xml:space="preserve">
-          <source>Settings</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">параметры</target>
-        </trans-unit>
         <trans-unit id="SettingsTab" translate="yes" xml:space="preserve">
           <source>Settings</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">параметры</target>
         </trans-unit>
-        <trans-unit id="Sign in" translate="yes" xml:space="preserve">
+        <trans-unit id="SignInTitle" translate="yes" xml:space="preserve">
           <source>Sign in</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Войти</target>
         </trans-unit>
-        <trans-unit id="Sign in to your account" translate="yes" xml:space="preserve">
-          <source>Sign in to your account</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Войдите в учетную запись</target>
-        </trans-unit>
-        <trans-unit id="Sign up" translate="yes" xml:space="preserve">
+        <trans-unit id="SignUpTitle" translate="yes" xml:space="preserve">
           <source>Sign up</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Регистрация</target>
         </trans-unit>

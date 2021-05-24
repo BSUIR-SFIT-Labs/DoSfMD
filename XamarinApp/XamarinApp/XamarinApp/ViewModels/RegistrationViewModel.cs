@@ -37,14 +37,14 @@ namespace XamarinApp.ViewModels
                 }
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert(AppContentText.Registration_Failed,
-                        AppContentText.Email_or_passwords_are_incorrect__Try_again_, AppContentText.Ok);
+                    await Application.Current.MainPage.DisplayAlert(AppContentText.RegistrationErrorTitle,
+                        AppContentText.RegistrationError, AppContentText.OkButton);
                 }
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert(AppContentText.Registration_Failed,
-                    AppContentText.Passwords_must_match_, AppContentText.Ok);
+                await Application.Current.MainPage.DisplayAlert(AppContentText.RegistrationErrorTitle,
+                    AppContentText.PasswordsError, AppContentText.OkButton);
             }
         }
 
