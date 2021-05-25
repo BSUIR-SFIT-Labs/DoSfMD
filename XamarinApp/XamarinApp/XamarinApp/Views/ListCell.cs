@@ -5,32 +5,32 @@ namespace XamarinApp.Views
 {
     public class ListCell : ViewCell
     {
-        Label LblName;
-        Label LblDescription;
-        Label LblPrice;
-        Image ImgComputer;
+        private readonly Label _lblName;
+        private readonly Label _lblDescription;
+        private readonly Label _lblPrice;
+        private readonly Image _imgComputer;
 
         public ListCell()
         {
-            LblName = new Label
+            _lblName = new Label
             {
                 HorizontalOptions = LayoutOptions.Start,
-                Padding = 10
+                Padding = new Thickness(5, 10, 0, 0)
             };
 
-            LblDescription = new Label
+            _lblDescription = new Label
             {
                 HorizontalOptions = LayoutOptions.EndAndExpand,
-                Padding = 10
+                Padding = new Thickness(0, 10, 5, 5)
             };
 
-            LblPrice = new Label
+            _lblPrice = new Label
             {
                 HorizontalOptions = LayoutOptions.Start,
-                Padding = 10
+                Padding = new Thickness(5, 5, 0, 10)
             };
 
-            ImgComputer = new Image
+            _imgComputer = new Image
             {
                 HeightRequest = 75,
                 WidthRequest = 75,
@@ -43,21 +43,23 @@ namespace XamarinApp.Views
                 Orientation = StackOrientation.Horizontal
             };
 
-            var title = new StackLayout
-            {
-                Orientation = StackOrientation.Vertical
-            };
-
             var head = new StackLayout
             {
                 Orientation = StackOrientation.Horizontal,
                 HorizontalOptions = LayoutOptions.FillAndExpand
             };
 
-            head.Children.Add(LblName);
-            title.Children.Add(LblDescription);
-            cell.Children.Add(ImgComputer);
-            cell.Children.Add(LblPrice);
+            var content = new StackLayout
+            {
+                Orientation = StackOrientation.Vertical
+            };
+
+            head.Children.Add(_lblName);
+            head.Children.Add(_lblDescription);
+            content.Children.Add(head);
+            content.Children.Add(_lblPrice);
+            cell.Children.Add(_imgComputer);
+            cell.Children.Add(content);
 
             View = cell;
         }
@@ -74,9 +76,9 @@ namespace XamarinApp.Views
             set => SetValue(DescriptionProperty, value);
         }
 
-        public int Price
+        public decimal Price
         {
-            get => (int)GetValue(PriceProperty);
+            get => (decimal)GetValue(PriceProperty);
             set => SetValue(PriceProperty, value);
         }
 
@@ -94,7 +96,7 @@ namespace XamarinApp.Views
 
         public static readonly BindableProperty NameProperty = BindableProperty.Create($"{nameof(Name)}", typeof(string), typeof(ListCell), "");
         public static readonly BindableProperty DescriptionProperty = BindableProperty.Create($"{nameof(Description)}", typeof(string), typeof(ListCell), "");
-        public static readonly BindableProperty PriceProperty = BindableProperty.Create($"{nameof(Price)}", typeof(int), typeof(ListCell), 0);
+        public static readonly BindableProperty PriceProperty = BindableProperty.Create($"{nameof(Price)}", typeof(decimal), typeof(ListCell), 0.00m);
         public static readonly BindableProperty ComputerIdProperty = BindableProperty.Create($"{nameof(ComputerId)}", typeof(string), typeof(ListCell), "");
         public static readonly BindableProperty ImageProperty = BindableProperty.Create($"{nameof(Image)}", typeof(ImageSource), typeof(ListCell), null);
 
@@ -104,16 +106,16 @@ namespace XamarinApp.Views
 
             if (BindingContext != null)
             {
-                LblName.Text = Name;
-                LblDescription.Text = Description;
-                LblPrice.Text = Price.ToString();
-                ImgComputer.Source = Image;
-                LblName.FontFamily = DefaultSettings.FontFamily;
-                LblDescription.FontFamily = DefaultSettings.FontFamily;
-                LblPrice.FontFamily = DefaultSettings.FontFamily;
-                LblName.FontSize = DefaultSettings.FontSize;
-                LblDescription.FontSize = DefaultSettings.FontSize;
-                LblPrice.FontSize = DefaultSettings.FontSize;
+                _lblName.Text = Name + " | ";
+                _lblDescription.Text = Description;
+                _lblPrice.Text = Price.ToString();
+                _imgComputer.Source = Image;
+                _lblName.FontFamily = DefaultSettings.FontFamily;
+                _lblDescription.FontFamily = DefaultSettings.FontFamily;
+                _lblPrice.FontFamily = DefaultSettings.FontFamily;
+                _lblName.FontSize = DefaultSettings.FontSize;
+                _lblDescription.FontSize = DefaultSettings.FontSize;
+                _lblPrice.FontSize = DefaultSettings.FontSize;
             }
         }
     }

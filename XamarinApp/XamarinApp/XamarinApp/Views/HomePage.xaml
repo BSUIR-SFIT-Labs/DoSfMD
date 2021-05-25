@@ -17,10 +17,10 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="ListOfComputers" RowHeight="100" ItemsSource="{Binding Computers, Mode=TwoWay}" ItemTapped="OnItemClicked">
+            <ListView x:Name="ListOfComputers" RowHeight="100" ItemsSource="{Binding Computers, Mode=TwoWay}" RefreshControlColor="Red" ItemTapped="OnItemClicked">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <views:ListCell Image="{Binding ComputerImage}" 
+                        <views:ListCell Image="{Binding ImageUrl}" 
                                         Name="{Binding Name, Mode=TwoWay}"
                                         Description="{Binding Description, Mode=TwoWay}"
                                         Price="{Binding Price, Mode=TwoWay}"/>

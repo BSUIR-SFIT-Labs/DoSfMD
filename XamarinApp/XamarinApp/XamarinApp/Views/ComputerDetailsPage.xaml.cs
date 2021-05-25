@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace XamarinApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class ComputerDetailsPage : ContentPage
     {
-        public HomePage()
+        public ComputerDetailsPage()
         {
             InitializeComponent();
-        }
-
-        public async void OnItemClicked(object sender, ItemTappedEventArgs e)
-        {
-            await Navigation.PushAsync(new ComputerDetailsPage());
         }
     }
 }
