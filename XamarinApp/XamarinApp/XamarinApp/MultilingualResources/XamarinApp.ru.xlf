@@ -102,9 +102,73 @@
           <source>Sign up</source>
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Регистрация</target>
         </trans-unit>
-        <trans-unit id="String1" translate="yes" xml:space="preserve">
+        <trans-unit id="AddComputerPageTitle" translate="yes" xml:space="preserve">
           <source>Add computer</source>
           <target state="new">Add computer</target>
+        </trans-unit>
+        <trans-unit id="AddImageButton" translate="yes" xml:space="preserve">
+          <source>Add image</source>
+          <target state="new">Add image</target>
+        </trans-unit>
+        <trans-unit id="AddVideoButton" translate="yes" xml:space="preserve">
+          <source>Add video</source>
+          <target state="new">Add video</target>
+        </trans-unit>
+        <trans-unit id="DescriptionLabel" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="new">Description</target>
+        </trans-unit>
+        <trans-unit id="LatitudeLabel" translate="yes" xml:space="preserve">
+          <source>Latitude</source>
+          <target state="new">Latitude</target>
+        </trans-unit>
+        <trans-unit id="LocationData" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="new">Location</target>
+        </trans-unit>
+        <trans-unit id="LongitudeLabel" translate="yes" xml:space="preserve">
+          <source>Longitude</source>
+          <target state="new">Longitude</target>
+        </trans-unit>
+        <trans-unit id="MainDataLabel" translate="yes" xml:space="preserve">
+          <source>Main data</source>
+          <target state="new">Main data</target>
+        </trans-unit>
+        <trans-unit id="MapButton" translate="yes" xml:space="preserve">
+          <source>Map</source>
+          <target state="new">Map</target>
+        </trans-unit>
+        <trans-unit id="NameLabel" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="new">Name</target>
+        </trans-unit>
+        <trans-unit id="PriceLabel" translate="yes" xml:space="preserve">
+          <source>Price</source>
+          <target state="new">Price</target>
+        </trans-unit>
+        <trans-unit id="ProcessorModelLabel" translate="yes" xml:space="preserve">
+          <source>Processor model</source>
+          <target state="new">Processor model</target>
+        </trans-unit>
+        <trans-unit id="RamSizeLabel" translate="yes" xml:space="preserve">
+          <source>RAM size</source>
+          <target state="new">RAM size</target>
+        </trans-unit>
+        <trans-unit id="SaveButton" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="new">Save</target>
+        </trans-unit>
+        <trans-unit id="ShowVideoButton" translate="yes" xml:space="preserve">
+          <source>Show video</source>
+          <target state="new">Show video</target>
+        </trans-unit>
+        <trans-unit id="SsdSizeLabel" translate="yes" xml:space="preserve">
+          <source>SSD size</source>
+          <target state="new">SSD size</target>
+        </trans-unit>
+        <trans-unit id="TypeLabel" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="new">Type</target>
         </trans-unit>
       </group>
     </body>

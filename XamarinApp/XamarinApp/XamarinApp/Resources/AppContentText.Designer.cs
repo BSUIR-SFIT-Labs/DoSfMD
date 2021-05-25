@@ -70,6 +70,24 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add image.
+        /// </summary>
+        internal static string AddImageButton {
+            get {
+                return ResourceManager.GetString("AddImageButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add video.
+        /// </summary>
+        internal static string AddVideoButton {
+            get {
+                return ResourceManager.GetString("AddVideoButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email or password are incorrect. Try again!.
         /// </summary>
         internal static string AuthError {
@@ -88,6 +106,15 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        internal static string DescriptionLabel {
+            get {
+                return ResourceManager.GetString("DescriptionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
         internal static string EmailPlaceholder {
@@ -102,6 +129,24 @@ namespace XamarinApp.Resources {
         internal static string HomeTab {
             get {
                 return ResourceManager.GetString("HomeTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Latitude.
+        /// </summary>
+        internal static string LatitudeLabel {
+            get {
+                return ResourceManager.GetString("LatitudeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location.
+        /// </summary>
+        internal static string LocationData {
+            get {
+                return ResourceManager.GetString("LocationData", resourceCulture);
             }
         }
         
@@ -142,6 +187,24 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Longitude.
+        /// </summary>
+        internal static string LongitudeLabel {
+            get {
+                return ResourceManager.GetString("LongitudeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Main data.
+        /// </summary>
+        internal static string MainDataLabel {
+            get {
+                return ResourceManager.GetString("MainDataLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Main settings.
         /// </summary>
         internal static string MainSettingsTitle {
@@ -153,9 +216,27 @@ namespace XamarinApp.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Map.
         /// </summary>
+        internal static string MapButton {
+            get {
+                return ResourceManager.GetString("MapButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Map.
+        /// </summary>
         internal static string MapTab {
             get {
                 return ResourceManager.GetString("MapTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string NameLabel {
+            get {
+                return ResourceManager.GetString("NameLabel", resourceCulture);
             }
         }
         
@@ -183,6 +264,33 @@ namespace XamarinApp.Resources {
         internal static string PasswordsError {
             get {
                 return ResourceManager.GetString("PasswordsError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Price.
+        /// </summary>
+        internal static string PriceLabel {
+            get {
+                return ResourceManager.GetString("PriceLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Processor model.
+        /// </summary>
+        internal static string ProcessorModelLabel {
+            get {
+                return ResourceManager.GetString("ProcessorModelLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RAM size.
+        /// </summary>
+        internal static string RamSizeLabel {
+            get {
+                return ResourceManager.GetString("RamSizeLabel", resourceCulture);
             }
         }
         
@@ -232,6 +340,15 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string SaveButton {
+            get {
+                return ResourceManager.GetString("SaveButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select Font.
         /// </summary>
         internal static string SelectFontFamilyPlaceholder {
@@ -268,6 +385,15 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show video.
+        /// </summary>
+        internal static string ShowVideoButton {
+            get {
+                return ResourceManager.GetString("ShowVideoButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sign in.
         /// </summary>
         internal static string SignInTitle {
@@ -282,6 +408,24 @@ namespace XamarinApp.Resources {
         internal static string SignUpTitle {
             get {
                 return ResourceManager.GetString("SignUpTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SSD size.
+        /// </summary>
+        internal static string SsdSizeLabel {
+            get {
+                return ResourceManager.GetString("SsdSizeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type.
+        /// </summary>
+        internal static string TypeLabel {
+            get {
+                return ResourceManager.GetString("TypeLabel", resourceCulture);
             }
         }
     }

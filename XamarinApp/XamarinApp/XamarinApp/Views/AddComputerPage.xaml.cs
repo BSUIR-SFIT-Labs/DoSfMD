@@ -16,5 +16,16 @@ namespace XamarinApp.Views
         {
             InitializeComponent();
         }
+
+        public void OnImageClick(object sender, EventArgs e)
+        {
+            // Navigation.PushAsync(new Gallery(smartphone));
+        }
+
+        public void OnMapClick(object sender, EventArgs e)
+        {
+            //CommonSmart.smartphones = new List<Smartphones>() { this.smartphone };
+            //Navigation.PushAsync(new GoogleMapPage());
+        }
     }
 }
