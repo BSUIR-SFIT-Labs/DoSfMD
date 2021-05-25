@@ -1,5 +1,6 @@
 ﻿using System.Windows.Input;
 using Xamarin.Forms;
+using XamarinApp.Models;
 using XamarinApp.Resources;
 using XamarinApp.Services;
 using XamarinApp.Views;
@@ -8,6 +9,7 @@ namespace XamarinApp.ViewModels
 {
     public class RegistrationViewModel : BaseViewModel
     {
+        private readonly IFirebaseDbService _firebaseDbService;
         private readonly IFirebaseAuthentication _firebaseAuthentication;
 
         public string Email { get; set; }
@@ -19,10 +21,11 @@ namespace XamarinApp.ViewModels
 
         public RegistrationViewModel()
         {
+            _firebaseDbService = DependencyService.Get<IFirebaseDbService>();
+            _firebaseAuthentication = DependencyService.Get<IFirebaseAuthentication>();
+
             Register = new Command(OnRegisterClicked);
             RedirectToLoginPage = new Command(OnRedirectToLoginPageClicked);
-
-            _firebaseAuthentication = DependencyService.Get<IFirebaseAuthentication>();
         }
 
         private async void OnRegisterClicked(object obj)
@@ -33,6 +36,15 @@ namespace XamarinApp.ViewModels
 
                 if (isRegistrationSuccessful)
                 {
+                    var user = new User
+                    {
+                        Email = Email,
+                        IsAdmin = false,
+                        IsBlocked = false
+                    };
+
+                    await _firebaseDbService.AddUserInfo(user);
+
                     Application.Current.MainPage = new LoginPage();
                 }
                 else
