@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace XamarinApp.Models
+﻿namespace XamarinApp.Models
 {
     public class Computer
     {
@@ -12,6 +10,10 @@ namespace XamarinApp.Models
         public int RamSize { get; set; }
         public int SsdSize { get; set; }
         public decimal Price { get; set; }
-        public List<string> Images { get; set; } = new List<string>();
+
+        public CloudFileData Image { get; set; }
+        public CloudFileData Video { get; set; }
+
+        public MapPoint MapPoint { get; set; }
     }
 }
