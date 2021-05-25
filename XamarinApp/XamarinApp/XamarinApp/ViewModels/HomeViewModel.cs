@@ -8,7 +8,7 @@ namespace XamarinApp.ViewModels
 {
     public class HomeViewModel : BaseViewModel
     {
-        public List<ComputerWithImage> Computers { get; set; }
+        //public List<ComputerWithImage> Computers { get; set; }
 
         public ICommand RedirectToAddComputerPage { get; }
 

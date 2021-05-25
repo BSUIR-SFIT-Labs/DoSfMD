@@ -133,6 +133,24 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please fill in the fields with correct data..
+        /// </summary>
+        internal static string IncorrectFieldsMessage {
+            get {
+                return ResourceManager.GetString("IncorrectFieldsMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fields filled in incorrectly.
+        /// </summary>
+        internal static string IncorrectFieldsTitle {
+            get {
+                return ResourceManager.GetString("IncorrectFieldsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Latitude.
         /// </summary>
         internal static string LatitudeLabel {

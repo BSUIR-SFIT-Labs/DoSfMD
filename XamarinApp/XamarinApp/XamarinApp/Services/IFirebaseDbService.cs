@@ -6,5 +6,7 @@ namespace XamarinApp.Services
     public interface IFirebaseDbService
     {
         Task AddUserInfo(User userDto);
+
+        Task AddComputer(Computer computerDto);
     }
 }

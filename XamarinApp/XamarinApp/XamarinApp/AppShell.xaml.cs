@@ -12,6 +12,7 @@ namespace XamarinApp
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
             Routing.RegisterRoute(nameof(AddComputerPage), typeof(AddComputerPage));
+            Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
 
             MessagingCenter.Subscribe<SettingsPage>(this, "LanguageChanged",
                 (sender) =>

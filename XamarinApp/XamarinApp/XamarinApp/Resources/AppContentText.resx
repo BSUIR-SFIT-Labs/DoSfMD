@@ -141,6 +141,12 @@
   <data name="HomeTab" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="IncorrectFieldsMessage" xml:space="preserve">
+    <value>Please fill in the fields with correct data.</value>
+  </data>
+  <data name="IncorrectFieldsTitle" xml:space="preserve">
+    <value>Fields filled in incorrectly</value>
+  </data>
   <data name="LatitudeLabel" xml:space="preserve">
     <value>Latitude</value>
   </data>

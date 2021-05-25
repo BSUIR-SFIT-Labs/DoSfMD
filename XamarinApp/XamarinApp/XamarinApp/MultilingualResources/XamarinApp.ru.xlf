@@ -170,6 +170,14 @@
           <source>Type</source>
           <target state="new">Type</target>
         </trans-unit>
+        <trans-unit id="IncorrectFieldsMessage" translate="yes" xml:space="preserve">
+          <source>Please fill in the fields with correct data.</source>
+          <target state="new">Please fill in the fields with correct data.</target>
+        </trans-unit>
+        <trans-unit id="IncorrectFieldsTitle" translate="yes" xml:space="preserve">
+          <source>Fields filled in incorrectly</source>
+          <target state="new">Fields filled in incorrectly</target>
+        </trans-unit>
       </group>
     </body>
   </file>

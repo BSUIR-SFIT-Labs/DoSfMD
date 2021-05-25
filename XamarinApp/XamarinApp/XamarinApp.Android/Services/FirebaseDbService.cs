@@ -17,5 +17,12 @@ namespace XamarinApp.Droid.Services
                 .Child("Users")
                 .PostAsync(userDto);
         }
+
+        public async Task AddComputer(Computer computerDto)
+        {
+            await _databaseClient
+                .Child("Computers")
+                .PostAsync(computerDto);
+        }
     }
 }

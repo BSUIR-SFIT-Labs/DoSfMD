@@ -13,8 +13,9 @@ namespace XamarinApp.Droid
         {
             base.OnCreate(savedInstanceState);
 
-            Xamarin.Forms.DependencyService.Register<FirebaseAuthentication>();
             Xamarin.Forms.DependencyService.Register<FirebaseDbService>();
+            Xamarin.Forms.DependencyService.Register<FirebaseStorageService>();
+            Xamarin.Forms.DependencyService.Register<FirebaseAuthentication>();
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
