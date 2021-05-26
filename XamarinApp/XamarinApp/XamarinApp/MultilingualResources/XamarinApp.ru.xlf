@@ -214,6 +214,14 @@
           <source>View video</source>
           <target state="new">View video</target>
         </trans-unit>
+        <trans-unit id="BanButton" translate="yes" xml:space="preserve">
+          <source>Ban user</source>
+          <target state="new">Ban user</target>
+        </trans-unit>
+        <trans-unit id="UserEmailToBanPlaceholder" translate="yes" xml:space="preserve">
+          <source>Select user email to ban</source>
+          <target state="new">Select user email to ban</target>
+        </trans-unit>
       </group>
     </body>
   </file>

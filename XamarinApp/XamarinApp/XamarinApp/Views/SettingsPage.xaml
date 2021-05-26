@@ -49,6 +49,21 @@
                     HorizontalOptions="FillAndExpand"  
                     BackgroundColor="#e64398" 
                     Margin="0, 10, 0 ,0"/>
+            <StackLayout x:Name="AdminPanel" IsVisible="{Binding CurrentUser.IsAdmin}">
+                <Picker x:Name="UserPicker"
+                        Title="{local:LanguageService UserEmailToBanPlaceholder}"
+                        HorizontalOptions="FillAndExpand" 
+                        FontSize="{local:FontSizeService}"
+                        FontFamily="{local:FontFamilyService}"/>
+
+                <Button Text="{local:LanguageService BanButton}"
+                        VerticalOptions="End"
+                        Clicked="Button_OnClicked"
+                        TextColor="#f0ebf4"  
+                        HorizontalOptions="FillAndExpand"  
+                        BackgroundColor="#e64398" 
+                        Margin="0, 10, 0 ,0"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

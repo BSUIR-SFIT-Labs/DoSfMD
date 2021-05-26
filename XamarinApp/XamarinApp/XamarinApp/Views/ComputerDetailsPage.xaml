@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewModels="clr-namespace:XamarinApp.ViewModels;assembly=XamarinApp"
              xmlns:local="clr-namespace:XamarinApp.Services;assembly=XamarinApp"
              x:Class="XamarinApp.Views.ComputerDetailsPage"
              Title="{local:LanguageService ComputerDetailsTab}">
@@ -29,10 +28,6 @@
                         FontSize="{local:FontSizeService}"/>
                 <Button Text="{local:LanguageService ViewVideoButton}"
                         Command="{Binding ViewVideo}"
-                        FontFamily="{local:FontFamilyService}"
-                        FontSize="{local:FontSizeService}"/>
-                <Button Text="{local:LanguageService ViewOnMapButton}"
-                        Command="{Binding ViewOnMap}"
                         FontFamily="{local:FontFamilyService}"
                         FontSize="{local:FontSizeService}"/>
 

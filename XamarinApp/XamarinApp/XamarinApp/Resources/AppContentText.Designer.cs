@@ -106,6 +106,15 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ban user.
+        /// </summary>
+        internal static string BanButton {
+            get {
+                return ResourceManager.GetString("BanButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Computer details.
         /// </summary>
         internal static string ComputerDetailsTab {
@@ -498,6 +507,15 @@ namespace XamarinApp.Resources {
         internal static string UpdateVideoButton {
             get {
                 return ResourceManager.GetString("UpdateVideoButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select user email to ban.
+        /// </summary>
+        internal static string UserEmailToBanPlaceholder {
+            get {
+                return ResourceManager.GetString("UserEmailToBanPlaceholder", resourceCulture);
             }
         }
         

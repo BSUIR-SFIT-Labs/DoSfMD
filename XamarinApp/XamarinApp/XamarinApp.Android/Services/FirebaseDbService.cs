@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Firebase.Auth;
 using Firebase.Database;
 using Firebase.Database.Query;
 using XamarinApp.Models;
@@ -19,6 +20,75 @@ namespace XamarinApp.Droid.Services
             await _databaseClient
                 .Child("Users")
                 .PostAsync(userDto);
+        }
+
+        public List<User> GetAllUsers()
+        {
+            var taskGetAllUsers = _databaseClient
+                .Child("Users")
+                .OnceAsync<User>();
+
+            taskGetAllUsers.Wait();
+
+            if (taskGetAllUsers.Exception != null)
+            {
+                Console.WriteLine(taskGetAllUsers.Exception.Message);
+                return null;
+            }
+
+            IEnumerable<FirebaseObject<User>> resultUsers = taskGetAllUsers.Result;
+
+            return resultUsers.Select(item => new User
+            {
+                Email = item.Object.Email,
+                IsAdmin = item.Object.IsAdmin,
+                IsBlocked = item.Object.IsBlocked
+            }).ToList();
+        }
+
+        public User GetCurrentUser()
+        {
+            string currentUserEmail = FirebaseAuth.Instance.CurrentUser.Email;
+
+            var taskGetAllUsers = _databaseClient
+                .Child("Users")
+                .OnceAsync<User>();
+
+            taskGetAllUsers.Wait();
+
+            if (taskGetAllUsers.Exception != null)
+            {
+                Console.WriteLine(taskGetAllUsers.Exception.Message);
+                return null;
+            }
+
+            IEnumerable<FirebaseObject<User>> resultUsers = taskGetAllUsers.Result;
+
+            return resultUsers.Select(item => new User
+            {
+                Email = item.Object.Email,
+                IsAdmin = item.Object.IsAdmin,
+                IsBlocked = item.Object.IsBlocked
+            }).First(u => u.Email == currentUserEmail);
+        }
+
+        public async Task BanUser(string email)
+        {
+            var userToBan = (await _databaseClient
+                .Child("Users")
+                .OnceAsync<User>()).FirstOrDefault(u => u.Object.Email == email);
+
+            var newUser = new User
+            {
+                Email = email,
+                IsAdmin = false,
+                IsBlocked = true
+            };
+
+            await _databaseClient
+                .Child("Users")
+                .Child(userToBan?.Key)
+                .PutAsync(newUser);
         }
 
         public async Task AddComputer(Computer computerDto)

@@ -38,7 +38,6 @@ namespace XamarinApp.ViewModels
         public ICommand UpdateImage { get; }
         public ICommand UpdateVideo { get; }
         public ICommand ViewVideo { get; }
-        public ICommand ViewOnMap { get; }
         public ICommand Save { get; }
 
         public ComputerDetailsViewModel(string id)
@@ -67,7 +66,6 @@ namespace XamarinApp.ViewModels
             UpdateImage = new Command(OnUpdateImageButtonClicked);
             UpdateVideo = new Command(OnUpdateVideoButtonClicked);
             ViewVideo = new Command(OnViewVideoButtonClicked);
-            ViewOnMap = new Command(OnViewOnMapButtonClicked);
             Save = new Command(OnSaveButtonClicked);
         }
 
@@ -127,11 +125,6 @@ namespace XamarinApp.ViewModels
                 await Application.Current.MainPage.DisplayAlert(AppContentText.NotFoundTitle,
                     AppContentText.VideoNotFoundMessage, AppContentText.OkButton);
             }
-        }
-
-        private async void OnViewOnMapButtonClicked()
-        {
-
         }
 
         private async void OnSaveButtonClicked()

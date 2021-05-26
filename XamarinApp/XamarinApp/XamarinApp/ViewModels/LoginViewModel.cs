@@ -9,6 +9,7 @@ namespace XamarinApp.ViewModels
     public class LoginViewModel : BaseViewModel
     {
         private readonly IFirebaseAuthentication _firebaseAuthentication;
+        private readonly IFirebaseDbService _firebaseDbService;
 
         public string Email { get; set; }
         public string Password { get; set; }
@@ -22,6 +23,7 @@ namespace XamarinApp.ViewModels
             RedirectToRegistrationPage = new Command(OnRedirectToRegistrationPageClicked);
 
             _firebaseAuthentication = DependencyService.Get<IFirebaseAuthentication>();
+            _firebaseDbService = DependencyService.Get<IFirebaseDbService>();
         }
 
         private async void OnLoginClicked(object obj)
@@ -30,7 +32,20 @@ namespace XamarinApp.ViewModels
 
             if (isAuthSuccessful)
             {
-                Application.Current.MainPage = new AppShell();
+                var currentUser = _firebaseDbService.GetCurrentUser();
+
+                if (currentUser.IsBlocked)
+                {
+                    _firebaseAuthentication.SignOut();
+
+                    await Application.Current.MainPage.DisplayAlert("Blocked",
+                        "You are blocked!", AppContentText.OkButton);
+                    Application.Current.MainPage = new LoginPage();
+                }
+                else
+                {
+                    Application.Current.MainPage = new AppShell();
+                }
             }
             else
             {

@@ -132,6 +132,9 @@
   <data name="AuthErrorTitle" xml:space="preserve">
     <value>Authentication Failed</value>
   </data>
+  <data name="BanButton" xml:space="preserve">
+    <value>Ban user</value>
+  </data>
   <data name="ComputerDetailsTab" xml:space="preserve">
     <value>Computer details</value>
   </data>
@@ -263,6 +266,9 @@
   </data>
   <data name="UpdateVideoButton" xml:space="preserve">
     <value>Update video</value>
+  </data>
+  <data name="UserEmailToBanPlaceholder" xml:space="preserve">
+    <value>Select user email to ban</value>
   </data>
   <data name="VideoNotFoundMessage" xml:space="preserve">
     <value>Video not found</value>

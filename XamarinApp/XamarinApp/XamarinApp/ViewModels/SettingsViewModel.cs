@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Windows.Input;
 using Xamarin.Forms;
+using XamarinApp.Models;
 using XamarinApp.Resources;
 using XamarinApp.Services;
 using XamarinApp.Settings;
@@ -13,6 +14,7 @@ namespace XamarinApp.ViewModels
     public class SettingsViewModel : BaseViewModel
     {
         private readonly IFirebaseAuthentication _firebaseAuthentication;
+        private readonly IFirebaseDbService _firebaseDbService;
 
         private readonly Dictionary<string, string> _languages = new Dictionary<string, string>()
         {
@@ -39,14 +41,30 @@ namespace XamarinApp.ViewModels
         public string CurrentFontFamily => DefaultSettings.FontFamily;
         public string CurrentFontSize => DefaultSettings.FontSize.ToString(CultureInfo.InvariantCulture);
 
+        public List<string> UserEmails { get; set; } = new List<string>();
+        public User CurrentUser { get; set; }
+
         public SettingsViewModel()
         {
             Languages = _languages;
             Fonts = _fonts;
 
             _firebaseAuthentication = DependencyService.Get<IFirebaseAuthentication>();
+            _firebaseDbService = DependencyService.Get<IFirebaseDbService>();
 
             LogOutCommand = new Command(OnLogOutClicked);
+
+            CurrentUser = _firebaseDbService.GetCurrentUser();
+
+            if (CurrentUser.IsAdmin)
+            {
+                var users = _firebaseDbService.GetAllUsers();
+
+                foreach (var user in users.Where(user => user.Email != CurrentUser.Email))
+                {
+                    UserEmails.Add(user.Email);
+                }
+            }
         }
 
         private async void OnLogOutClicked(object obj)

@@ -8,6 +8,12 @@ namespace XamarinApp.Services
     {
         Task AddUserInfo(User userDto);
 
+        List<User> GetAllUsers();
+
+        User GetCurrentUser();
+
+        Task BanUser(string email);
+
         List<Computer> GetAllComputers();
 
         Computer GetComputerById(string id);

@@ -8,15 +8,13 @@ namespace XamarinApp.Views
 {
     public class GoogleMapPage : ContentPage
     {
-        private readonly IFirebaseDbService _firebaseDbService;
-
         public List<Computer> Computers { get; set; }
 
         public GoogleMapPage()
         {
-            _firebaseDbService = DependencyService.Get<IFirebaseDbService>();
+            var firebaseDbService = DependencyService.Get<IFirebaseDbService>();
 
-            Computers = _firebaseDbService.GetAllComputers();
+            Computers = firebaseDbService.GetAllComputers();
 
             var map = new Map
             {

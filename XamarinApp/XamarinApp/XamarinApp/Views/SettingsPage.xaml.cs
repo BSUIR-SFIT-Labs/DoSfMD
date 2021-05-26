@@ -2,6 +2,7 @@
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinApp.Services;
 using XamarinApp.Settings;
 using XamarinApp.ViewModels;
 
@@ -11,12 +12,16 @@ namespace XamarinApp.Views
     public partial class SettingsPage : ContentPage
     {
         private readonly SettingsViewModel _settingsViewModel;
+        private readonly IFirebaseDbService _firebaseDbService;
 
         public SettingsPage()
         {
             _settingsViewModel = new SettingsViewModel();
+            _firebaseDbService = DependencyService.Get<IFirebaseDbService>();
 
             InitializeComponent();
+
+            AdminPanel.IsVisible = _settingsViewModel.CurrentUser.IsAdmin;
 
             foreach (string language in _settingsViewModel.Languages.Keys)
             {
@@ -31,6 +36,11 @@ namespace XamarinApp.Views
             for (int i = 1; i <= 25; i++)
             {
                 FontSizePicker.Items.Add(i.ToString());
+            }
+
+            foreach (string emailToBan in _settingsViewModel.UserEmails)
+            {
+                UserPicker.Items.Add(emailToBan);
             }
         }
 
@@ -62,6 +72,18 @@ namespace XamarinApp.Views
                 Preferences.Set("FontSize", DefaultSettings.FontSize);
                 MessagingCenter.Send(this, "FontSizeChanged");
             }
+        }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            string userEmailToBan = (string) UserPicker.SelectedItem;
+
+            if (string.IsNullOrWhiteSpace(userEmailToBan))
+            {
+                return;
+            }
+
+            _firebaseDbService.BanUser(userEmailToBan);
         }
     }
 }
