@@ -32,7 +32,7 @@
 
     <TabBar>
         <ShellContent Title="{localLang:LanguageService HomeTab}" Icon="icon_home.png" ContentTemplate="{DataTemplate local:HomePage}" />
-        <ShellContent Title="{localLang:LanguageService MapTab}" Icon="icon_map.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="{localLang:LanguageService MapTab}" Icon="icon_map.png" ContentTemplate="{DataTemplate local:GoogleMapPage}" />
         <ShellContent Title="{localLang:LanguageService SettingsTab}" Icon="icon_settings.png" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </TabBar>
 

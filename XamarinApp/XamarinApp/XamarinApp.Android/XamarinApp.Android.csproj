@@ -65,13 +65,16 @@
       <Version>1.0.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Auth">
-      <Version>120.0.3</Version>
+      <Version>120.0.4</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Core">
-      <Version>118.0.2</Version>
+      <Version>118.0.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Forms.Maps">
+      <Version>5.0.0.2012</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

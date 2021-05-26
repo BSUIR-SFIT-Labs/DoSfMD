@@ -11,8 +11,8 @@
         public int SsdSize { get; set; }
         public decimal Price { get; set; }
 
-        public string ImageUrl { get; set; }
-        public string VideoUrl { get; set; }
+        public CloudFileData Image { get; set; }
+        public CloudFileData Video { get; set; }
 
         public MapPoint MapPoint { get; set; }
     }

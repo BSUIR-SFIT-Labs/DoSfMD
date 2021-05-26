@@ -1,16 +1,16 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using XamarinApp.Models;
 using XamarinApp.ViewModels;
 
 namespace XamarinApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ComputerDetailsPage : ContentPage
+    public partial class ViewVideoPage : ContentPage
     {
-        public ComputerDetailsPage(string id)
+        public ViewVideoPage(string videoUrl)
         {
-            var viewModel = new ComputerDetailsViewModel(id);
+            var viewModel = new ViewVideoViewModel();
+            viewModel.Video = videoUrl;
             BindingContext = viewModel;
             InitializeComponent();
         }

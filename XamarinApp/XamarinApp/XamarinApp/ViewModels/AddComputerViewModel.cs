@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using XamarinApp.Models;
@@ -22,7 +23,9 @@ namespace XamarinApp.ViewModels
         public string Price { get; set; }
         
         public string ImageUrl { get; set; }
+        public string ImageName { get; set; }
         public string VideoUrl { get; set; }
+        public string VideoName { get; set; }
 
         public string Latitude { get; set; }
         public string Longitude { get; set; }
@@ -52,7 +55,8 @@ namespace XamarinApp.ViewModels
 
             string extension = photo.FileName.Split('.')[1];
             var stream = await photo.OpenReadAsync();
-            ImageUrl = await _firebaseStorageService.LoadImage(stream, extension);
+            ImageName = Guid.NewGuid().ToString();
+            ImageUrl = await _firebaseStorageService.LoadImage(stream, ImageName, extension);
         }
 
         private async void OnAddVideoButtonClicked()
@@ -66,7 +70,8 @@ namespace XamarinApp.ViewModels
 
             string extension = video.FileName.Split('.')[1];
             var stream = await video.OpenReadAsync();
-            VideoUrl = await _firebaseStorageService.LoadVideo(stream, extension);
+            VideoName = Guid.NewGuid().ToString();
+            VideoUrl = await _firebaseStorageService.LoadVideo(stream, VideoName, extension);
         }
 
         private async void OnSaveButtonClicked()
@@ -75,6 +80,7 @@ namespace XamarinApp.ViewModels
             {
                 var computer = new Computer
                 {
+                    Id = Guid.NewGuid().ToString(),
                     Name = Name,
                     Description = Description,
                     Type = Type,
@@ -87,8 +93,16 @@ namespace XamarinApp.ViewModels
                         Latitude = double.Parse(Latitude),
                         Longitude = double.Parse(Longitude)
                     },
-                    ImageUrl = ImageUrl,
-                    VideoUrl = VideoUrl
+                    Image = new CloudFileData
+                    {
+                        FileName = ImageName,
+                        DownloadUrl = ImageUrl
+                    },
+                    Video = new CloudFileData
+                    {
+                        FileName = VideoName,
+                        DownloadUrl = VideoUrl
+                    }
                 };
 
                 await _firebaseDbService.AddComputer(computer);

@@ -106,6 +106,15 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Computer details.
+        /// </summary>
+        internal static string ComputerDetailsTab {
+            get {
+                return ResourceManager.GetString("ComputerDetailsTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
         internal static string DescriptionLabel {
@@ -129,6 +138,15 @@ namespace XamarinApp.Resources {
         internal static string HomeTab {
             get {
                 return ResourceManager.GetString("HomeTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image.
+        /// </summary>
+        internal static string ImageTab {
+            get {
+                return ResourceManager.GetString("ImageTab", resourceCulture);
             }
         }
         
@@ -259,6 +277,15 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Not found.
+        /// </summary>
+        internal static string NotFoundTitle {
+            get {
+                return ResourceManager.GetString("NotFoundTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ok.
         /// </summary>
         internal static string OkButton {
@@ -367,6 +394,15 @@ namespace XamarinApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Save changes.
+        /// </summary>
+        internal static string SaveChangesButton {
+            get {
+                return ResourceManager.GetString("SaveChangesButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select Font.
         /// </summary>
         internal static string SelectFontFamilyPlaceholder {
@@ -444,6 +480,51 @@ namespace XamarinApp.Resources {
         internal static string TypeLabel {
             get {
                 return ResourceManager.GetString("TypeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update image.
+        /// </summary>
+        internal static string UpdateImageButton {
+            get {
+                return ResourceManager.GetString("UpdateImageButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update video.
+        /// </summary>
+        internal static string UpdateVideoButton {
+            get {
+                return ResourceManager.GetString("UpdateVideoButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Video not found.
+        /// </summary>
+        internal static string VideoNotFoundMessage {
+            get {
+                return ResourceManager.GetString("VideoNotFoundMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View on map.
+        /// </summary>
+        internal static string ViewOnMapButton {
+            get {
+                return ResourceManager.GetString("ViewOnMapButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View video.
+        /// </summary>
+        internal static string ViewVideoButton {
+            get {
+                return ResourceManager.GetString("ViewVideoButton", resourceCulture);
             }
         }
     }

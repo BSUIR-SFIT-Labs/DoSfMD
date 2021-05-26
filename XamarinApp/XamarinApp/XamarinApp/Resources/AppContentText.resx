@@ -132,6 +132,9 @@
   <data name="AuthErrorTitle" xml:space="preserve">
     <value>Authentication Failed</value>
   </data>
+  <data name="ComputerDetailsTab" xml:space="preserve">
+    <value>Computer details</value>
+  </data>
   <data name="DescriptionLabel" xml:space="preserve">
     <value>Description</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="HomeTab" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="ImageTab" xml:space="preserve">
+    <value>Image</value>
   </data>
   <data name="IncorrectFieldsMessage" xml:space="preserve">
     <value>Please fill in the fields with correct data.</value>
@@ -183,6 +189,9 @@
   <data name="NameLabel" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="NotFoundTitle" xml:space="preserve">
+    <value>Not found</value>
+  </data>
   <data name="OkButton" xml:space="preserve">
     <value>Ok</value>
   </data>
@@ -219,6 +228,9 @@
   <data name="SaveButton" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="SaveChangesButton" xml:space="preserve">
+    <value>Save changes</value>
+  </data>
   <data name="SelectFontFamilyPlaceholder" xml:space="preserve">
     <value>Select Font</value>
   </data>
@@ -245,5 +257,20 @@
   </data>
   <data name="TypeLabel" xml:space="preserve">
     <value>Type</value>
+  </data>
+  <data name="UpdateImageButton" xml:space="preserve">
+    <value>Update image</value>
+  </data>
+  <data name="UpdateVideoButton" xml:space="preserve">
+    <value>Update video</value>
+  </data>
+  <data name="VideoNotFoundMessage" xml:space="preserve">
+    <value>Video not found</value>
+  </data>
+  <data name="ViewOnMapButton" xml:space="preserve">
+    <value>View on map</value>
+  </data>
+  <data name="ViewVideoButton" xml:space="preserve">
+    <value>View video</value>
   </data>
 </root>

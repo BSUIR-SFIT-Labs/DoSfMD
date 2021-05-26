@@ -178,6 +178,42 @@
           <source>Fields filled in incorrectly</source>
           <target state="new">Fields filled in incorrectly</target>
         </trans-unit>
+        <trans-unit id="ComputerDetailsTab" translate="yes" xml:space="preserve">
+          <source>Computer details</source>
+          <target state="new">Computer details</target>
+        </trans-unit>
+        <trans-unit id="ImageTab" translate="yes" xml:space="preserve">
+          <source>Image</source>
+          <target state="new">Image</target>
+        </trans-unit>
+        <trans-unit id="NotFoundTitle" translate="yes" xml:space="preserve">
+          <source>Not found</source>
+          <target state="new">Not found</target>
+        </trans-unit>
+        <trans-unit id="SaveChangesButton" translate="yes" xml:space="preserve">
+          <source>Save changes</source>
+          <target state="new">Save changes</target>
+        </trans-unit>
+        <trans-unit id="UpdateImageButton" translate="yes" xml:space="preserve">
+          <source>Update image</source>
+          <target state="new">Update image</target>
+        </trans-unit>
+        <trans-unit id="UpdateVideoButton" translate="yes" xml:space="preserve">
+          <source>Update video</source>
+          <target state="new">Update video</target>
+        </trans-unit>
+        <trans-unit id="VideoNotFoundMessage" translate="yes" xml:space="preserve">
+          <source>Video not found</source>
+          <target state="new">Video not found</target>
+        </trans-unit>
+        <trans-unit id="ViewOnMapButton" translate="yes" xml:space="preserve">
+          <source>View on map</source>
+          <target state="new">View on map</target>
+        </trans-unit>
+        <trans-unit id="ViewVideoButton" translate="yes" xml:space="preserve">
+          <source>View video</source>
+          <target state="new">View video</target>
+        </trans-unit>
       </group>
     </body>
   </file>

@@ -1,16 +1,16 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using XamarinApp.Models;
 using XamarinApp.ViewModels;
 
 namespace XamarinApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ComputerDetailsPage : ContentPage
+    public partial class ViewImagePage : ContentPage
     {
-        public ComputerDetailsPage(string id)
+        public ViewImagePage(string imageUrl)
         {
-            var viewModel = new ComputerDetailsViewModel(id);
+            var viewModel = new ViewImageViewModel();
+            viewModel.Image = imageUrl;
             BindingContext = viewModel;
             InitializeComponent();
         }
