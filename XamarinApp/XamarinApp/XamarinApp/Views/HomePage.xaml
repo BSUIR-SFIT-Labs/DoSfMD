@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:XamarinApp.ViewModels;assembly=XamarinApp"
+             xmlns:views="clr-namespace:XamarinApp.Views;assembly=XamarinApp"
+             xmlns:local="clr-namespace:XamarinApp.Services;assembly=XamarinApp"
+             x:Class="XamarinApp.Views.HomePage"
+             Title="{local:LanguageService HomeTab}">
+
+    <ContentPage.BindingContext>
+        <viewModels:HomeViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding RedirectToAddComputerPage}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ListOfComputers" RowHeight="100" ItemsSource="{Binding Computers, Mode=TwoWay}" ItemTapped="OnItemClicked">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <views:ListCell Image="{Binding Image.DownloadUrl, Mode=TwoWay}" 
+                                        Name="{Binding Name, Mode=TwoWay}"
+                                        Description="{Binding Description, Mode=TwoWay}"
+                                        Price="{Binding Price, Mode=TwoWay}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

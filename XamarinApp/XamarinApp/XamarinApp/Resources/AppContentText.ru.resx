@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddImageButton" xml:space="preserve">
+    <value>Добавить изображение</value>
+  </data>
+  <data name="AddVideoButton" xml:space="preserve">
+    <value>Добавить видео</value>
+  </data>
+  <data name="AuthErrorTitle" xml:space="preserve">
+    <value>Проверка подлинности не пройдена</value>
+  </data>
+  <data name="ComputerDetailsTab" xml:space="preserve">
+    <value>Подробные сведения о компьютере</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="EmailPlaceholder" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="HomeTab" xml:space="preserve">
+    <value>домашний</value>
+  </data>
+  <data name="ImageTab" xml:space="preserve">
+    <value>Изображения</value>
+  </data>
+  <data name="LatitudeLabel" xml:space="preserve">
+    <value>Широта</value>
+  </data>
+  <data name="LocationData" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="LoginButton" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="LogOutButton" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="LongitudeLabel" xml:space="preserve">
+    <value>Долгота</value>
+  </data>
+  <data name="MapButton" xml:space="preserve">
+    <value>Карта</value>
+  </data>
+  <data name="MapTab" xml:space="preserve">
+    <value>Карта</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="NotFoundTitle" xml:space="preserve">
+    <value>Не найдено</value>
+  </data>
+  <data name="OkButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="PasswordPlaceholder" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="PasswordsError" xml:space="preserve">
+    <value>Пароли должны совпадать.</value>
+  </data>
+  <data name="PriceLabel" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="ProcessorModelLabel" xml:space="preserve">
+    <value>Модель процессора</value>
+  </data>
+  <data name="RamSizeLabel" xml:space="preserve">
+    <value>Размер ОЗУ</value>
+  </data>
+  <data name="RedirectToLoginPage" xml:space="preserve">
+    <value>Войдите в учетную запись</value>
+  </data>
+  <data name="RedirectToRegistrationPage" xml:space="preserve">
+    <value>Зарегистрировать сейчас</value>
+  </data>
+  <data name="RegisterButton" xml:space="preserve">
+    <value>Зарегистрировать</value>
+  </data>
+  <data name="RegistrationErrorTitle" xml:space="preserve">
+    <value>Регистрация не выполнена</value>
+  </data>
+  <data name="SaveButton" xml:space="preserve">
+    <value>сохранить</value>
+  </data>
+  <data name="SaveChangesButton" xml:space="preserve">
+    <value>Сохранение изменений</value>
+  </data>
+  <data name="SelectFontFamilyPlaceholder" xml:space="preserve">
+    <value>Выберите шрифт</value>
+  </data>
+  <data name="SelectLanguagePlaceholder" xml:space="preserve">
+    <value>Выберите язык</value>
+  </data>
+  <data name="SettingsTab" xml:space="preserve">
+    <value>параметры</value>
+  </data>
+  <data name="ShowVideoButton" xml:space="preserve">
+    <value>Показать видео</value>
+  </data>
+  <data name="SignInTitle" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="SignUpTitle" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="TypeLabel" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="UpdateVideoButton" xml:space="preserve">
+    <value>Обновление видео</value>
+  </data>
+  <data name="VideoNotFoundMessage" xml:space="preserve">
+    <value>Видеозапись не найдена.</value>
+  </data>
+  <data name="ViewVideoButton" xml:space="preserve">
+    <value>Просмотреть видео</value>
+  </data>
+</root>

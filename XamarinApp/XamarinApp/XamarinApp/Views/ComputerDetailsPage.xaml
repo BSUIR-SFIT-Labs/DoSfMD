@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinApp.Services;assembly=XamarinApp"
+             x:Class="XamarinApp.Views.ComputerDetailsPage"
+             Title="{local:LanguageService ComputerDetailsTab}">
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20,10,20,10">
+                <ImageButton x:Name="Image" 
+                             WidthRequest="100" 
+                             HeightRequest="100" 
+                             HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="FillAndExpand" 
+                             Source="{Binding ImageUrl}"
+                             Command="{Binding ViewImage}"
+                             BackgroundColor="Transparent" />
+                <Button Text="{local:LanguageService UpdateImageButton}"
+                        Margin="0, 10, 0, 0"
+                        Command="{Binding UpdateImage}"
+                        FontFamily="{local:FontFamilyService}"
+                        FontSize="{local:FontSizeService}"/>
+                <Button Text="{local:LanguageService UpdateVideoButton}"
+                        Command="{Binding UpdateVideo}"
+                        FontFamily="{local:FontFamilyService}"
+                        FontSize="{local:FontSizeService}"/>
+                <Button Text="{local:LanguageService ViewVideoButton}"
+                        Command="{Binding ViewVideo}"
+                        FontFamily="{local:FontFamilyService}"
+                        FontSize="{local:FontSizeService}"/>
+
+                <Label Text="{local:LanguageService MainDataLabel}"  HorizontalOptions="Center" FontFamily="{local:FontFamilyService}" FontSize="{local:FontSizeService}" />
+                <StackLayout Orientation="Vertical">
+                    <Entry Text="{Binding Name}"
+                           Placeholder="{local:LanguageService NameLabel}"
+                           FontFamily="{local:FontFamilyService}"
+                           FontSize="{local:FontSizeService}"
+                           HorizontalOptions="FillAndExpand" />
+                    <Entry Text="{Binding Description}"
+                           Placeholder="{local:LanguageService DescriptionLabel}"
+                           FontFamily="{local:FontFamilyService}"
+                           FontSize="{local:FontSizeService}" 
+                           HorizontalOptions="FillAndExpand" />
+                    <Entry Text="{Binding Type}"
+                           Placeholder="{local:LanguageService TypeLabel}"
+                           FontFamily="{local:FontFamilyService}" 
+                           FontSize="{local:FontSizeService}"
+                           HorizontalOptions="FillAndExpand" />
+                    <Entry Text="{Binding ProcessorModel}" 
+                           Placeholder="{local:LanguageService ProcessorModelLabel}"
+                           FontFamily="{local:FontFamilyService}"
+                           FontSize="{local:FontSizeService}"
+                           HorizontalOptions="FillAndExpand" />
+                    <Entry Text="{Binding RamSize}"
+                           Placeholder="{local:LanguageService RamSizeLabel}"
+                           FontFamily="{local:FontFamilyService}"
+                           FontSize="{local:FontSizeService}"
+                           HorizontalOptions="FillAndExpand" />
+                    <Entry Text="{Binding SsdSize}"
+                           Placeholder="{local:LanguageService SsdSizeLabel}"
+                           FontFamily="{local:FontFamilyService}" 
+                           FontSize="{local:FontSizeService}"
+                           HorizontalOptions="FillAndExpand" />
+                    <Entry Text="{Binding Price}" 
+                           Placeholder="{local:LanguageService PriceLabel}"
+                           FontFamily="{local:FontFamilyService}" 
+                           FontSize="{local:FontSizeService}"
+                           HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+
+                <Label Text="{local:LanguageService LocationData}"  HorizontalOptions="Center" FontSize="{local:FontSizeService}" FontFamily="{local:FontFamilyService}"/>
+                <StackLayout Orientation="Vertical">
+                    <Entry Text="{Binding Latitude}"
+                           Placeholder="{local:LanguageService LatitudeLabel}"
+                           FontSize="{local:FontSizeService}" 
+                           FontFamily="{local:FontFamilyService}"
+                           HorizontalOptions="FillAndExpand" />
+                    <Entry Text="{Binding Longitude}" 
+                           Placeholder="{local:LanguageService LongitudeLabel}"
+                           FontSize="{local:FontSizeService}" 
+                           FontFamily="{local:FontFamilyService}"
+                           HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <Button Text="{local:LanguageService SaveChangesButton}" 
+                            TextColor="White"
+                            FontSize="{local:FontSizeService}"
+                            HorizontalOptions="FillAndExpand"
+                            Command="{Binding Save}"
+                            FontFamily="{local:FontFamilyService}"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

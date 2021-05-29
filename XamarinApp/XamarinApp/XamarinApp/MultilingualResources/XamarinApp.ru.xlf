@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="ru" original="XAMARINAPP/RESOURCES/APPCONTENTTEXT.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6916.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="XAMARINAPP/RESOURCES/APPCONTENTTEXT.RESX" datatype="resx">
+        <trans-unit id="AddComputerPageTitle" translate="yes" xml:space="preserve">
+          <source>Add computer</source>
+          <target state="new">Add computer</target>
+        </trans-unit>
+        <trans-unit id="AddImageButton" translate="yes" xml:space="preserve">
+          <source>Add image</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Добавить изображение</target>
+        </trans-unit>
+        <trans-unit id="AddVideoButton" translate="yes" xml:space="preserve">
+          <source>Add video</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Добавить видео</target>
+        </trans-unit>
+        <trans-unit id="AuthError" translate="yes" xml:space="preserve">
+          <source>Email or password are incorrect. Try again!</source>
+          <target state="new">Email or password are incorrect. Try again!</target>
+        </trans-unit>
+        <trans-unit id="AuthErrorTitle" translate="yes" xml:space="preserve">
+          <source>Authentication Failed</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Проверка подлинности не пройдена</target>
+        </trans-unit>
+        <trans-unit id="BanButton" translate="yes" xml:space="preserve">
+          <source>Ban user</source>
+          <target state="new">Ban user</target>
+        </trans-unit>
+        <trans-unit id="ComputerDetailsTab" translate="yes" xml:space="preserve">
+          <source>Computer details</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Подробные сведения о компьютере</target>
+        </trans-unit>
+        <trans-unit id="DescriptionLabel" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Описание</target>
+        </trans-unit>
+        <trans-unit id="EmailPlaceholder" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Электронная почта</target>
+        </trans-unit>
+        <trans-unit id="HomeTab" translate="yes" xml:space="preserve">
+          <source>Home</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">домашний</target>
+        </trans-unit>
+        <trans-unit id="ImageTab" translate="yes" xml:space="preserve">
+          <source>Image</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Изображения</target>
+        </trans-unit>
+        <trans-unit id="IncorrectFieldsMessage" translate="yes" xml:space="preserve">
+          <source>Please fill in the fields with correct data.</source>
+          <target state="new">Please fill in the fields with correct data.</target>
+        </trans-unit>
+        <trans-unit id="IncorrectFieldsTitle" translate="yes" xml:space="preserve">
+          <source>Fields filled in incorrectly</source>
+          <target state="new">Fields filled in incorrectly</target>
+        </trans-unit>
+        <trans-unit id="LatitudeLabel" translate="yes" xml:space="preserve">
+          <source>Latitude</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Широта</target>
+        </trans-unit>
+        <trans-unit id="LocationData" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Местоположение</target>
+        </trans-unit>
+        <trans-unit id="LoginButton" translate="yes" xml:space="preserve">
+          <source>Login</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Вход</target>
+        </trans-unit>
+        <trans-unit id="LogOutButton" translate="yes" xml:space="preserve">
+          <source>Log out</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Выйти</target>
+        </trans-unit>
+        <trans-unit id="LogOutError" translate="yes" xml:space="preserve">
+          <source>An error occurred while logging out of account. Try Again!</source>
+          <target state="new">An error occurred while logging out of account. Try Again!</target>
+        </trans-unit>
+        <trans-unit id="LogOutErrorTitle" translate="yes" xml:space="preserve">
+          <source>Logout Failed</source>
+          <target state="new">Logout Failed</target>
+        </trans-unit>
+        <trans-unit id="LongitudeLabel" translate="yes" xml:space="preserve">
+          <source>Longitude</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Долгота</target>
+        </trans-unit>
+        <trans-unit id="MainDataLabel" translate="yes" xml:space="preserve">
+          <source>Main data</source>
+          <target state="new">Main data</target>
+        </trans-unit>
+        <trans-unit id="MainSettingsTitle" translate="yes" xml:space="preserve">
+          <source>Main settings</source>
+          <target state="new">Main settings</target>
+        </trans-unit>
+        <trans-unit id="MapButton" translate="yes" xml:space="preserve">
+          <source>Map</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Карта</target>
+        </trans-unit>
+        <trans-unit id="MapTab" translate="yes" xml:space="preserve">
+          <source>Map</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Карта</target>
+        </trans-unit>
+        <trans-unit id="NameLabel" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Название</target>
+        </trans-unit>
+        <trans-unit id="NotFoundTitle" translate="yes" xml:space="preserve">
+          <source>Not found</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Не найдено</target>
+        </trans-unit>
+        <trans-unit id="OkButton" translate="yes" xml:space="preserve">
+          <source>Ok</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">ОК</target>
+        </trans-unit>
+        <trans-unit id="PasswordPlaceholder" translate="yes" xml:space="preserve">
+          <source>Password</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Введите пароль</target>
+        </trans-unit>
+        <trans-unit id="PasswordsError" translate="yes" xml:space="preserve">
+          <source>Passwords must match.</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Пароли должны совпадать.</target>
+        </trans-unit>
+        <trans-unit id="PriceLabel" translate="yes" xml:space="preserve">
+          <source>Price</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Цена</target>
+        </trans-unit>
+        <trans-unit id="ProcessorModelLabel" translate="yes" xml:space="preserve">
+          <source>Processor model</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Модель процессора</target>
+        </trans-unit>
+        <trans-unit id="RamSizeLabel" translate="yes" xml:space="preserve">
+          <source>RAM size</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Размер ОЗУ</target>
+        </trans-unit>
+        <trans-unit id="RedirectToLoginPage" translate="yes" xml:space="preserve">
+          <source>Sign in to your account</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Войдите в учетную запись</target>
+        </trans-unit>
+        <trans-unit id="RedirectToRegistrationPage" translate="yes" xml:space="preserve">
+          <source>Register now</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Зарегистрировать сейчас</target>
+        </trans-unit>
+        <trans-unit id="RegisterButton" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Зарегистрировать</target>
+        </trans-unit>
+        <trans-unit id="RegistrationError" translate="yes" xml:space="preserve">
+          <source>Email or passwords are incorrect. Try again!</source>
+          <target state="new">Email or passwords are incorrect. Try again!</target>
+        </trans-unit>
+        <trans-unit id="RegistrationErrorTitle" translate="yes" xml:space="preserve">
+          <source>Registration Failed</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Регистрация не выполнена</target>
+        </trans-unit>
+        <trans-unit id="SaveButton" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">сохранить</target>
+        </trans-unit>
+        <trans-unit id="SaveChangesButton" translate="yes" xml:space="preserve">
+          <source>Save changes</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Сохранение изменений</target>
+        </trans-unit>
+        <trans-unit id="SelectFontFamilyPlaceholder" translate="yes" xml:space="preserve">
+          <source>Select Font</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Выберите шрифт</target>
+        </trans-unit>
+        <trans-unit id="SelectFontSizePlaceholder" translate="yes" xml:space="preserve">
+          <source>Select Font size</source>
+          <target state="new">Select Font size</target>
+        </trans-unit>
+        <trans-unit id="SelectLanguagePlaceholder" translate="yes" xml:space="preserve">
+          <source>Select language</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Выберите язык</target>
+        </trans-unit>
+        <trans-unit id="SettingsTab" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">параметры</target>
+        </trans-unit>
+        <trans-unit id="ShowVideoButton" translate="yes" xml:space="preserve">
+          <source>Show video</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Показать видео</target>
+        </trans-unit>
+        <trans-unit id="SignInTitle" translate="yes" xml:space="preserve">
+          <source>Sign in</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Войти</target>
+        </trans-unit>
+        <trans-unit id="SignUpTitle" translate="yes" xml:space="preserve">
+          <source>Sign up</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Регистрация</target>
+        </trans-unit>
+        <trans-unit id="SsdSizeLabel" translate="yes" xml:space="preserve">
+          <source>SSD size</source>
+          <target state="new">SSD size</target>
+        </trans-unit>
+        <trans-unit id="TypeLabel" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Тип</target>
+        </trans-unit>
+        <trans-unit id="UpdateImageButton" translate="yes" xml:space="preserve">
+          <source>Update image</source>
+          <target state="new">Update image</target>
+        </trans-unit>
+        <trans-unit id="UpdateVideoButton" translate="yes" xml:space="preserve">
+          <source>Update video</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Обновление видео</target>
+        </trans-unit>
+        <trans-unit id="UserEmailToBanPlaceholder" translate="yes" xml:space="preserve">
+          <source>Select user email to ban</source>
+          <target state="new">Select user email to ban</target>
+        </trans-unit>
+        <trans-unit id="VideoNotFoundMessage" translate="yes" xml:space="preserve">
+          <source>Video not found</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Видеозапись не найдена.</target>
+        </trans-unit>
+        <trans-unit id="ViewOnMapButton" translate="yes" xml:space="preserve">
+          <source>View on map</source>
+          <target state="new">View on map</target>
+        </trans-unit>
+        <trans-unit id="ViewVideoButton" translate="yes" xml:space="preserve">
+          <source>View video</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Просмотреть видео</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
