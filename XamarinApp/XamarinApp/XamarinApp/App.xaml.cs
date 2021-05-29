@@ -13,7 +13,6 @@ namespace XamarinApp
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new LoginPage();
         }
 

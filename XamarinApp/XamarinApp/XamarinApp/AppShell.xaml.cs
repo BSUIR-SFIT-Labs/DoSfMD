@@ -8,8 +8,6 @@ namespace XamarinApp
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(SettingsPage), typeof(SettingsPage));
             Routing.RegisterRoute(nameof(AddComputerPage), typeof(AddComputerPage));
             Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
