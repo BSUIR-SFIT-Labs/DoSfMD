@@ -42,4 +42,13 @@
     <string name="details">Детали компьютера</string>
     <string name="video">Видео</string>
     <string name="mappoint">Отметка на карте</string>
+    <string name="user_details">Информация о пользователе</string>
+    <string name="blocked">Заблокирован</string>
+    <string name="active">Активный</string>
+    <string name="success">Успешно</string>
+    <string name="success_change">Параметры пользователя были успешно изменены</string>
+    <string name="error">Ошибка</string>
+    <string name="status">Статус пользователя</string>
+    <string name="set_active">Активировать</string>
+    <string name="set_blocked">Заблокировать</string>
 </resources>

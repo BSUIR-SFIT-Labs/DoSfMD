@@ -28,6 +28,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
         <activity android:name=".ui.main.blocked.BlockedActivity"></activity>
+        <activity
+            android:name=".ui.main.admin.users.details.UsersDetailsActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".ui.services.googleMapsLocationPicker.GoogleMapsLocationPickerActivity" />
         <activity
             android:name=".ui.main.computers.details.ComputerDetailsActivity"

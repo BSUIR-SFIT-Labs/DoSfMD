@@ -41,4 +41,13 @@
     <string name="details">Computer details</string>
     <string name="video">Video</string>
     <string name="mappoint">Map point</string>
+    <string name="user_details">User details</string>
+    <string name="blocked">Blocked</string>
+    <string name="active">Active</string>
+    <string name="success">Success</string>
+    <string name="success_change">User\'s params have been sucessfully changed</string>
+    <string name="error">Error</string>
+    <string name="status">User status</string>
+    <string name="set_active">Set active</string>
+    <string name="set_blocked">Set blocked</string>
 </resources>
