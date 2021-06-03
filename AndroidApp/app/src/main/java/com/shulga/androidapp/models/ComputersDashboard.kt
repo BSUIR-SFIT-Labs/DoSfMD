@@ -1,5 +1,5 @@
 package com.shulga.androidapp.models
 
-data class SongsDashboard (
+data class ComputersDashboard (
     var assets: ArrayList<ComputerAsset> = ArrayList()
 )
