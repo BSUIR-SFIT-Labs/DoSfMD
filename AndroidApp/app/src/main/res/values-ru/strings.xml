@@ -39,4 +39,7 @@
     <string name="note">Заметка</string>
     <string name="must_be_not_empty">Поле не должно быть пустым</string>
     <string name="new_computer">Новый компьютер</string>
+    <string name="details">Детали компьютера</string>
+    <string name="video">Видео</string>
+    <string name="mappoint">Отметка на карте</string>
 </resources>

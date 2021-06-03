@@ -39,4 +39,7 @@
     <string name="note">Note</string>
     <string name="must_be_not_empty">Must be not empty</string>
     <string name="new_computer">New computer</string>
+    <string name="details">Computer details</string>
+    <string name="video">Video</string>
+    <string name="mappoint">Map point</string>
 </resources>

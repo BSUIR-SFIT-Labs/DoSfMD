@@ -43,9 +43,9 @@
         tools:layout="@layout/activity_form" />
     <activity
         android:id="@+id/songsDetailsActivity"
-        android:name="com.morozov.songs.ui.main.songs.details.SongsDetailsActivity"
+        android:name="com.shulga.androidapp.ui.main.computers.details.ComputerDetailsActivity"
         android:label="activity_songs_details"
-        tools:layout="@layout/activity_songs_details" />
+        tools:layout="@layout/activity_computer_details" />
     <activity
         android:id="@+id/usersDetailsActivity"
         android:name="com.morozov.songs.ui.main.admin.users.details.UsersDetailsActivity"
