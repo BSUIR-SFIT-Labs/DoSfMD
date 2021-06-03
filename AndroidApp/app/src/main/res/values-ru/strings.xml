@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Компьютеры</string>
+    <string name="invalid_email">Неверный адрес электронной почты</string>
+    <string name="password_length_error">Пароль должен содержать не менее 6 символов</string>
+    <string name="welcome">Зарегистрироваться / Войти</string>
+    <string name="password">Пароль</string>
+    <string name="email">Почта</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+</resources>
